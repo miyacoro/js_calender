@@ -1,0 +1,123 @@
+
+/* -----------------------------------------
+    リセットCSS
+  ----------------------------------------- */
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Futura, 'Century Gothic', 游ゴシック体, YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 游ゴシック, 'Yu Gothic', メイリオ, Meiryo, sans-serif;
+}
+
+h1, h2{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+dl, dt, dd{
+  margin: 0;
+  padding: 0;
+}
+
+table, tr, td{
+  margin: 0;
+  padding: 0;
+}
+
+span{
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------------------
+    カレンダー全体
+  ----------------------------------------- */
+
+.calender_wrap{
+  padding: 150px 40px 40px 40px;
+}
+
+/* -----------------------------------------
+    カレンダー上部（今月の月/西暦/和暦/先月/翌月）
+  ----------------------------------------- */
+
+.calender_head{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+/* 先月・翌月カレンダー全体 */
+.sub_calender_wrap{
+  display: flex;
+}
+
+/* 先月・翌月の月 */
+.mini_month_number{
+  padding-left: 4px;
+  font-size: 24px;
+}
+
+/* 先月・翌月カレンダー table */
+.sub_calender_wrap table{
+  margin: 0px -3px 0px 0px;
+}
+
+.sub_calender_wrap table td{
+  padding: 3px;
+  text-align: center;
+}
+
+.last_month_wrap{
+  margin: 0px 40px 0px 0px;
+}
+
+
+/* 今月の月 */
+.current_month_number{
+  margin: 0px 0px 32px 0px;
+  font-size: 110px;
+  font-weight: 600;
+}
+
+/* 西暦 */
+.year{
+  font-size: 24px;
+}
+
+/* 和暦 */
+.current_month_en_text{
+  font-size: 24px;
+}
+
+/* -----------------------------------------
+    今月のカレンダー table
+  ----------------------------------------- */
+
+.current_month_wrap table{
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.current_month_wrap table td{
+  height: 80px;
+  padding: 8px 0px 0px 8px;
+  border: 1px solid #dadada;
+  font-size: 22px;
+  vertical-align: top;
+}
+
+/* 曜日の行 */
+.current_month_wrap table td.day_of_week{
+  height: 32px;
+  padding: 0px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+}

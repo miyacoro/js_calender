@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>カレンダー</title>
+  <link rel="stylesheet" href="css/style.css" media="all">
+</head>
+<body>
+  <main>
+    <div class="calender_wrap">
+      <div class="calender_head">
+        <!-- ===== 今月（月・西暦・和暦） ===== -->
+        <div class="current_month_number_wrap">
+          <h1 id="month" class="current_month_number"></h1>
+          <dl>
+            <dd id="current_month_en_text" class="current_month_en_text"></dd>
+            <dd class="year"><span id="year"></span> / <span id="jpa_year"></span></dd>
+          </dl>
+        </div>
+        <!-- ===== 先月・翌月 ===== -->
+        <div class="sub_calender_wrap">
+          <!-- ===== 先月 ===== -->
+          <div id="last_month" class="last_month_wrap"></div>
+          <!-- ===== 翌月 ===== -->
+          <div id="next_month"></div>
+        </div>
+      </div>
+      <!-- ===== 今月（カレンダー） ===== -->
+      <div id="current_month" class="current_month_wrap"></div>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
